@@ -1,0 +1,14 @@
+<table id="customers">
+  <tr>
+    <th>ID</th>
+    <th>Nombre Repositorio</th>
+    <th>Propietario</th>
+    <th>Full Name</th>
+  </tr>
+  <tr *ngFor="let repository of allRepositories">
+    <td>{{ repository.id }}</td>
+    <td>{{ repository.name }}</td>
+    <td>{{ repository.owner.login }}</td>
+    <td>{{ repository.full_name }}</td>
+  </tr>
+</table>

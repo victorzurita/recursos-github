@@ -1,0 +1,24 @@
+.user-github {
+    padding: 0 30px;    
+}
+.avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.links-github {
+    display: block;
+    font-size: 14px;
+}
+
+.user-name {
+    font-size: 20px;
+}

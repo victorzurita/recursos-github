@@ -1,0 +1,23 @@
+<div class="row user-github">
+  <div class="card col-md-3" *ngFor="let user of usersGithub">
+    <div class="header-card">
+      <div *ngIf="user.avatar_url; else noAvatar">
+        <img [src]="user.avatar_url" alt="" class="avatar">
+      </div>
+      <ng-template #noAvatar>
+        <img src="/assets/images/default-avatar.png" alt="">
+      </ng-template>
+      <span class="user-name">{{ user.login }}</span>
+    </div>
+    <div class="content-card">
+      <span class="links-github">
+        <a [href]="user.url" target="_blank">usuario en github</a>
+      </span>
+      <span class="links-github">
+        <a routerLink="/repositories">repositorios</a>
+      </span>
+    </div>
+    <div class="footer-card">
+    </div>
+  </div>
+</div>
